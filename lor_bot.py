@@ -52,6 +52,7 @@ loop.create_task(bot_app.initialize())
 loop.create_task(bot_app.start())
 
 async def set_webhook():
-    await bot_app.bot.set_webhook(url=f"https://<YOUR_RENDER_DOMAIN>/{TOKEN}")
+    await bot_app.bot.set_webhook(url=f"https://telegram-lor-bot.onrender.com/{TOKEN}")
+
 
 loop.create_task(set_webhook())
